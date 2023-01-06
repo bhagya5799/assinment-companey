@@ -15,9 +15,9 @@
     align-items: center;
     border-radius: 6px;
 }
-#design{
-    height: 50%;
-    width: 60%;
+.diamond-shape{
+    height: 200px;
+    width: 200px;
     text-align: center;
     background-color: rgb(91, 148, 183);
    color: white;
@@ -25,6 +25,10 @@
    border-right: 20px solid #beb4b4;
    border-top: 20px solid #c26c10;
    border-bottom: 20px solid rgb(45, 144, 205);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transform: rotate(-45deg);
 }
 
 p{
@@ -49,25 +53,17 @@ span{
 	height: 0;
 
 }
-  .diamond-shape {
-    background: rgb(206, 187, 187);
-    height: 60px;
-    transform:rotate(45deg);
-    width:30px;
-
-   padding-top: 13px;
-    align-items: center;
-  }
-  .item-count {
+ 
+  .text-inside {
     color: #333;
     display: table-cell;
     height: 60px;
-    transform: rotate(-45deg);
-    /* vertical-align: middle; */
     width:60px;
- 
+    width: max-content;
+    height: max-content;
+    transform: rotate(45deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  .postion{
-    position: absolute;
-    transform: rotate(-30);
-  }
+  

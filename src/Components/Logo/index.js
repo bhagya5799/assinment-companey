@@ -6,8 +6,8 @@ export default function index() {
     <div className='container'>
 
         <div className='card'>
-            <div class="diamond-shape" id="design">
-             <div class="item-count">
+            <div class="diamond-shape">
+             <div class="text-inside">
                 <p>HTML <span> & </span> CSS</p>
                  <p className='description'>Design and build website</p> 
               </div>
