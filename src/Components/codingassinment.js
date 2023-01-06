@@ -2,12 +2,16 @@ const checkRouteOfTravel = (city,tickets,startCity) => {
     let tempStartState = startCity 
     let visited = []
     for (let i of tickets){
-        if (i[tempStartState] === tempStartState && !visited.includes(i[tempStartState])) {
-          visited.push(i[tempStartState])
-          tempStartState = i[tempStartState]
+        for (let j of tickets){
+            temp = j[tempStartState]
+        if (temp !== undefined && !visited.includes(j[tempStartState])) {
+          visited.push(j[tempStartState])
+          tempStartState = j[tempStartState]
+          
+        }
         }
     }
-    console.log(visited)
+    return visited
 }
 
 
@@ -28,3 +32,4 @@ const city = ["Amsterdam", "Kiev", "Zurich", "Prague", "Berlin", "Barcelona"]
 const startCity = "Kiev"
 
 const result = checkRouteOfTravel(city,tickets,startCity)
+console.log(result)
